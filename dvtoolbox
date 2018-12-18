@@ -28,24 +28,23 @@ yellow='\e[1;32m'
 |------/| / /        \ \=====/ /   |====|  |===|-------/|    
 |------///-/          \-\===/ /    |-----------|-------/|
 ~~~~https://www.facebook.com/davidapollo.1996~~~~ "
+ echo " "
+echo -e $green"  [01] TM-scanner"
+echo -e $green"  [02] Credmap"
+echo -e $green"  [03] Metasploit"
+echo -e $green"  [04] DarkSploit"
+echo -e $green"  [05] Pybelt"
+echo -e $green"  [06] Shellphish(phi)
+echo -e $green"  [07] Routersploit"
+echo -e $green"  [08] Brutespray"
+echo -e $green"  [09] Dos Tool"
+echo -e $green"  [10] IPGeoLocation"
+echo-e $green"  [11] AdvanceSql"
+echo -e $green"  [12] Bruteforce-attack"
 
-echo ""
-echo -e $blue"  [01] TM-scanner"
-echo -e $blue"  [02] Credmap"
-echo -e $blue"  [03] Metasploit"
-echo -e $blue"  [04] DarkSploit"
-echo -e $blue"  [05] Pybelt"
-echo -e $blue"  [06] Shellphish(phi)
-echo -e $blue"  [07] Routersploit"
-echo -e $blue"  [08] Brutespray"
-echo -e $blue"  [09] Dos Tool"
-echo -e $blue"  [10] IPGeoLocation"
-echo -e $blue"  [11] AdvanceSql"
-echo -e $blue"  [12] Bruteforce-attack"
 
-
-echo -e $"  [99]  Exit "
-echo -e $blue""
+-e $"  [99]  Exit "
+-e $blue""
 read -p "   『DavidApollo™』  " act;
 
 if [ $act = 1 ] || [ $act = 01 ]
@@ -66,7 +65,7 @@ fi
 if [ $act = 2 ] || [ $act = 02 ]
 then
 clear
-echo -e $yellow" please wait installing credmap "
+-e $yellow" please wait installing credmap "
 sleep 1
 apt-get update && apt-get upgrade
 apt-get install git
@@ -159,8 +158,7 @@ fi
 
 if [ $act = 08 ] || [ $act = 8 ]
 then
-
-echo -e $cyan" please wait installing Brutespray "
+ -e $cyan" please wait installing Brutespray "
 sleep 1
 git clone https://github.com/x90skysn3k/brutespray
 cp -r brutespray $HOME
@@ -172,7 +170,7 @@ fi
 if [ $act = 09 ] || [ $act = 9 ]
 then
 clear
-echo -e $red" please wait installing Nikto web server scanner "
+-e $red" please wait installing Nikto web server scanner "
 sleep 1
 pkg update
 pkg upgrade
@@ -187,7 +185,7 @@ fi
 if [ $act = 10 ] || [ $act = 10 ]
 then
 clear
-echo -e $green" please wait installing xerxes "
+-e $green" please wait installing xerxes "
 sleep 1
 apt update && apt upgrade
 apt install python2
@@ -218,10 +216,10 @@ fi
 if [ $act = 11 ] || [ $act = 11 ]
 then
 clear
-echo -e $yellow" please wait installing AdvanceSql "
+-e $yellow" please wait installing AdvanceSql "
 sleep 1
 
-git clone https://github.com/SiThuTuntimehacker/AdvanceSql
+git clone https://github.com/davidapollo.1996/AdvanceSql
 cp -r AdvanceSql $HOME
 rm -rf AdvanceSql
 ./toolbox
@@ -231,21 +229,19 @@ fi
 if [ $act = 12 ] || [ $act = 12 ]
 then
 clear
-echo -e $green" please wait installing bruteforce-attack "
+ -e $green" please wait installing bruteforce-attack "
 sleep 1
-git clone https://github.com/SiThuTuntimehacker/bruteforce-attack
+git clone https://github.com/davidapollo.1996/bruteforce-attack
 cp -r bruteforce-attack $HOME
 rm -rf bruteforce-attack
 ./toolbox
 echo -e $green" Accept "
 fi
 
-if [ $act = 99 ] || [ $act = 99  ]
+if [ $act = 00 ] || [ $act = 00  ]
 then
-echo "  Sharing For Knowledge "
 sleep 1
-
-echo " Thank you for using  "
+ " David Apollo  "
 sleep 1
 exit
 fi
